@@ -2,7 +2,7 @@
 
 Frontend repository: [GitHub link](github.com/yawenx2004/Lowkey-MVP)
 
-Deployed site: [Render link](TODO)
+Deployed site: TODO on Render
 
 Developed by Yawen Xue and Jillian Darcy.
 
