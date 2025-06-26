@@ -1,0 +1,22 @@
+{
+  "name": "lowkey-mvp-backend",
+  "version": "1.0.0",
+  "description": "Frontend repository: [GitHub link](github.com/yawenx2004/Lowkey-MVP)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yawenx2004/Lowkey-MVP-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yawenx2004/Lowkey-MVP-backend/issues"
+  },
+  "homepage": "https://github.com/yawenx2004/Lowkey-MVP-backend#readme"
+}
