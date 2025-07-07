@@ -2,13 +2,15 @@
 
 Frontend repository: [GitHub link](github.com/yawenx2004/Lowkey-MVP)
 
-Deployed site: TODO on Render
+Deployed site: [Render link](https://lowkey-mvp-backend.onrender.com/)
 
 Developed by Yawen Xue and Jillian Darcy.
 
 ## Installation Instructions
 
 ## Tech Stack
+- Express & Node.js
+- Firebase
 
 ## Future Improvements
 
