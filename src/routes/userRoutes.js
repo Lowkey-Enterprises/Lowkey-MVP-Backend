@@ -8,4 +8,10 @@ router.post('/', userController.createUser);
 // get all users
 router.get('/', userController.getUsers);
 
+// delete user
+router.delete('/:id', userController.deleteUser);
+
+// TODO update status
+// TODO update care circle
+
 module.exports = router;

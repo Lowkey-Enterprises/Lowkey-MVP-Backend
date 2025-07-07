@@ -19,5 +19,15 @@ module.exports = {
         const user = users.find(user => user.id === id);
         if (user) user.status = status;
         return user;
+    },
+
+    // delete user
+    deleteUser: (id) => {
+        const userIndex = users.findIndex(user => user.id === id);
+        if (userIndex === -1) return null;
+
+        const deletedUser = users[userIndex];
+        users.splice(userIndex, 1);
+        return deletedUser;
     }
 };
