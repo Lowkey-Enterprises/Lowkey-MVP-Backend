@@ -17,14 +17,38 @@ app.use('/users', userRoutes);
 // seed test user
 userModel.createUser({
   id: 'test-id',
-  name: "Test User",
+  name: "Jonah",
 	email: "test@lowkey.com",
 	phoneNumber: "1234567890",
 	zipCode: "12345",
 	dob: "01012004",
 	careCircle: [
-		"grace-id",
-		"ren-id"
+		"raleigh-id",
+		"louis-id"
+	],
+});
+
+userModel.createUser({
+  id: 'raleigh-id',
+  name: "Raleigh",
+	email: 'raleigh@lowkey.com',
+	phoneNumber: "1234567890",
+	zipCode: "12345",
+	dob: "01012004",
+	careCircle: [
+		"test-id"
+	],
+});
+
+userModel.createUser({
+  id: 'louis-id',
+  name: "Louis",
+	email: "louis@lowkey.com",
+	phoneNumber: "1234567890",
+	zipCode: "12345",
+	dob: "01012004",
+	careCircle: [
+		"test-id"
 	],
 });
 
