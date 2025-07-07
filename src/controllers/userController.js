@@ -24,12 +24,18 @@ const createUser = (req, res) => {
     res.status(201).json(user);
 };
 
-// GET /users/:id
+// GET /users
 const getUsers = (req, res) => {
     res.json(userModel.getAllUsers());
 };
 
-// DELETE /user
+// GET /users/:id
+const getUser = (req, res) => {
+    const user = userModel.getUserById(req.params.id);
+    res.status(200).json(user);
+};
+
+// DELETE /users/:id
 const deleteUser = (req, res) => {
     const deletedUser = userModel.deleteUser(req.params.id);
     if (!deletedUser) {
@@ -41,5 +47,6 @@ const deleteUser = (req, res) => {
 module.exports = {
     createUser,
     getUsers,
+    getUser,
     deleteUser
 };
