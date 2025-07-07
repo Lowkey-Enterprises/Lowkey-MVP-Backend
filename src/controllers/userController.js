@@ -10,7 +10,7 @@ const createUser = (req, res) => {
     }
 
     const user = {
-        id: uuidv4(),
+        id: id || uuidv4(),
         name,
         email,
         phoneNumber,
