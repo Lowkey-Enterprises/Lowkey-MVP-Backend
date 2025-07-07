@@ -3,7 +3,7 @@ const userModel = require('../models/userModel');
 
 // POST /users
 const createUser = (req, res) => {
-    const { name, email, phoneNumber, zipCode, dob, careCircle = [] } = req.body;
+    const { id, name, email, phoneNumber, zipCode, dob, careCircle = [] } = req.body;
 
     if (!name || !email || !phoneNumber || !zipCode || !dob) {
         return res.status(400).json({ error: 'Missing information' });
