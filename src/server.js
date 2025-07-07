@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
+
+const userRoutes = require('./routes/userRoutes');
 app.use(express.json());
 
 // simple route to test server is working
@@ -10,6 +12,7 @@ app.get('/ping', (req, res) => {
 
 // TODO routes & middleware
 // (i'll run a refresher myself & update with more details
+app.use('/users', userRoutes);
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}...`);
